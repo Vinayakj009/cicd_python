@@ -8,9 +8,10 @@ adverbs = ('remarkably', 'enormously', 'substantially', 'significantly',
     'seriously')
 verbs = ('accelerates', 'improves', 'enhances', 'revamps', 'boosts')
 
-def sample(l, n = 4):
-    result = random.sample(l, n)
-    if n == 4:
+def sample(l, n = 1):
+    n = n-1
+    result = random.sample(l, n+1)
+    if n == 0:
         return result[0]
     return result
 
